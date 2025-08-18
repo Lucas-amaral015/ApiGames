@@ -17,21 +17,27 @@ public class Game {
 
     @Column(name = "game_year")
     private Integer year; //ano
-    private String genre; //genero
+    private String genre;//genero
     private String platform; //plataforma
+    private double score;
     private String imgUrl; //imagem url
+
+    @Column(columnDefinition = "TEXT")
     private  String shortDescription; //descrição curta
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription; //descrição longa
 
     public Game() {
 
     }
-    public Game(Long id, String name, String title, Integer year, String genre, String platform, String imgUrl, String shortDescription, String longDescription) {
+    public Game(Long id, String name, String title, Integer year, String genre, String platform, double score, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
         this.year = year;
         this.genre = genre;
         this.platform = platform;
+        this.score = score;
         this.imgUrl = imgUrl;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
@@ -101,6 +107,14 @@ public class Game {
 
     public void setLongDescription(String longDescription) {
         this.longDescription = longDescription;
+    }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
     }
 
     @Override
