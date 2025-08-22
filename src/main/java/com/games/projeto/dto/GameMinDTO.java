@@ -1,6 +1,7 @@
 package com.games.projeto.dto;
 
 import com.games.projeto.entities.Game;
+import com.games.projeto.projections.GameMinProjection;
 
 public class GameMinDTO { //limitar os campos para disponibilizar para o front
 
@@ -12,6 +13,13 @@ public class GameMinDTO { //limitar os campos para disponibilizar para o front
 
     GameMinDTO(){
 
+    }
+    public GameMinDTO(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 
     public GameMinDTO(Game entity) {
