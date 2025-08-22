@@ -1,6 +1,6 @@
-package com.games.projeto.entities;
+package com.games.projeto.dto;
 
-import jakarta.persistence.Column;
+import com.games.projeto.entities.Game;
 import org.springframework.beans.BeanUtils;
 
 public class GameDTO {//controlar e padronizar o codigo e evitar representação ciclicas
