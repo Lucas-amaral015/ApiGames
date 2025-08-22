@@ -1,4 +1,6 @@
-package com.games.projeto.entities;
+package com.games.projeto.dto;
+
+import com.games.projeto.entities.Game;
 
 public class GameMinDTO { //limitar os campos para disponibilizar para o front
 

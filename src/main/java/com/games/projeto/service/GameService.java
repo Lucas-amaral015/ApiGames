@@ -1,8 +1,8 @@
 package com.games.projeto.service;
 
 import com.games.projeto.entities.Game;
-import com.games.projeto.entities.GameDTO;
-import com.games.projeto.entities.GameMinDTO;
+import com.games.projeto.dto.GameDTO;
+import com.games.projeto.dto.GameMinDTO;
 import com.games.projeto.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
